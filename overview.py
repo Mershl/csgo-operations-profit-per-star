@@ -20,7 +20,7 @@ def print_overview_for_page(csgo_stash_page_url):
         item_quality = item.find_next('p').text
         try:
             item_price = item.find(lambda tag: tag.name == 'a' and '€' in tag.text).text
-            item_price = float(item_price[:-1].replace(',', '.'))
+            item_price = float(item_price[:-1].replace(',', '.').replace('-', '0'))
         except AttributeError:
             # found an ad
             continue
