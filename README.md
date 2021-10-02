@@ -1,6 +1,20 @@
 # CSGO Operations Profit/Star
 
-## Example call
+## Installation (e.g. with a venv)
+```text
+# Installation
+git clone https://github.com/Mershl/csgo-operations-profit-per-star.git
+cd csgo-operations-profit-per-star
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+
+# Running
+source env/bin/activate
+./riptide_agents.sh
+```
+
+## Manually using script (e.g. future Missions - remember to add costs to STAR_COST_TABLE)
 
 `overview.py https://csgostash.com/agents/Operation+Riptide+Agents`
 
